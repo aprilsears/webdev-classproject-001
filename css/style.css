@@ -6,9 +6,9 @@ html {
 }
 
 body {
-	color: #333333;
+	color: #000000;
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 16px;
+	font-size: 20px;
 	line-height: 1.6;
 	background-color: #f9f9f9;
 }
@@ -27,7 +27,7 @@ h6 {
 }
 
 p {
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 	line-height: 1.6;
 	margin: 0 0 1.6rem;
 }
@@ -51,24 +51,47 @@ hr {
 
 /* Layout */
 
+.main {
+	background: linear-gradient(pink, coral, orange, yellow);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
+
+}
 .container {
-	padding: 0;
+	padding: 10rem;
 	margin: 0 auto;
 	width: 100%;
 	max-width: 1000px;
+	border: 3px solid white;
 }
+
 
 /* Media Queries */
 
 @media (min-width: 699px) {
+	
+.main {
+	flex-direction: row;
 
-	/* CSS HERE */
+ }
+ .container {
 
+	justify-content: center;
+}
 }
 
 /* Desktop Media Query */
 @media (min-width: 999px) {
-
-	/* CSS HERE */
-
-}
+	.main {
+		flex-direction: row;
+	
+	 }
+	 .container {
+	
+		justify-content: center;
+	}
+	}
